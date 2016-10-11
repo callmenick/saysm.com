@@ -1,0 +1,17 @@
+extends ./_layouts/primary.pug
+
+block variables
+
+block main
+  nav.NavSpecial
+    a.NavSpecial-link(href= SITE_URL)
+      img.NavSpecial-logo(src= SITE_URL + "/img/logo.svg", alt="")
+    a.NavSpecial-link(href= SITE_URL + "/work")
+      span Work
+      i.NavSpecial-icon.fa.fa-camera
+    a.NavSpecial-link(href= SITE_URL + "/blog")
+      span Blog
+      i.NavSpecial-icon.fa.fa-book
+    a.NavSpecial-link(href= SITE_URL + "/about")
+      span About
+      i.NavSpecial-icon.fa.fa-pencil

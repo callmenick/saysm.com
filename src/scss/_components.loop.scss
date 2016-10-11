@@ -1,0 +1,43 @@
+.Loop {
+}
+
+.Loop-img {
+  display: block;
+  margin: 0 0 map-get($gutter, lg) 0;
+  padding: 0;
+  filter: grayscale(1) opacity(0.4);
+  -webkit-filter: grayscale(1) opacity(0.4);
+
+  transition: filter 0.3s;
+  -webkit-transition: -webkit-filter 0.3s;
+
+  &:hover {
+    filter: grayscale(0) opacity(1);
+    -webkit-filter: grayscale(0) opacity(1);
+  }
+}
+
+.Loop-title {
+  margin: 0 0 map-get($gutter, sm) 0;
+  font-family: $font-secondary;
+  font-size: map-get($font-size, xl);
+  font-weight: normal;
+  text-transform: lowercase;
+  text-align: center;
+
+  a {
+    color: $color-neutral-2;
+
+    &:hover {
+      color: $color-ui-pink;
+    }
+  }
+}
+
+.Loop-date {
+  margin: 0;
+  padding: 0;
+  color: $color-neutral-7;
+  font-size: map-get($font-size, sm);
+  text-align: center;
+}

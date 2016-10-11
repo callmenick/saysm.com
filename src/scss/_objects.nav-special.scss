@@ -1,0 +1,136 @@
+.NavSpecial {
+  position: relative;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../img/home/collection-shoot-poster.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.NavSpecial-link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  color: #fff;
+  font-size: map-get($font-size, md);
+  font-weight: 700;
+  text-transform: lowercase;
+
+  &:hover {
+    color: #fff;
+  }
+
+  @include break(sm) {
+    font-size: map-get($font-size, lg);
+  }
+
+  @include break(md) {
+    font-size: map-get($font-size, xl);
+  }
+
+  @include break(lg) {
+    font-size: map-get($font-size, xx);
+  }
+}
+
+.NavSpecial-link {
+  mix-blend-mode: hard-light;
+}
+
+.NavSpecial-link:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.NavSpecial-link:nth-child(2) {
+  top: 0;
+  left: 50%;
+  background-color: $color-ui-pink;
+
+  &:hover {
+    background-color: $color-ui-pink-dark;
+  }
+}
+
+.NavSpecial-link:nth-child(3) {
+  top: 50%;
+  left: 0;
+  background-color: $color-ui-green;
+
+  &:hover {
+    background-color: $color-ui-green-dark;
+  }
+}
+
+.NavSpecial-link:nth-child(4) {
+  top: 50%;
+  left: 50%;
+  background-color: $color-ui-neutral;
+
+  &:hover {
+    background-color: $color-ui-neutral-dark;
+  }
+}
+
+.NavSpecial-link span {
+  position: relative;
+}
+
+.NavSpecial-link span::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 0.4rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity 0.3s, transform 0.3s;
+  content: "";
+}
+
+.NavSpecial-link:hover span::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.NavSpecial-logo {
+  display: block;
+  margin: 0 map-get($gutter, md);
+}
+
+.NavSpecial-icon {
+  position: absolute;
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #fff;
+  font-size: map-get($font-size, lg);
+  text-align: center;
+  line-height: 4.8rem;
+}
+
+.NavSpecial-link:nth-child(2) .NavSpecial-icon {
+  top: 0;
+  right: 0;
+  background-color: $color-ui-pink-dark;
+}
+
+.NavSpecial-link:nth-child(3) .NavSpecial-icon {
+  bottom: 0;
+  left: 0;
+  background-color: $color-ui-green-dark;
+}
+
+.NavSpecial-link:nth-child(4) .NavSpecial-icon {
+  right: 0;
+  bottom: 0;
+  background-color: $color-ui-neutral-dark;
+}

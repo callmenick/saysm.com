@@ -1,0 +1,19 @@
+a {
+  color: $color-ui-pink;
+  text-decoration: none;
+  transition: color 0.3s, background 0.3s;
+}
+
+a:hover {
+  color: $color-ui-pink-dark;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}
