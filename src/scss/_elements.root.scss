@@ -3,5 +3,9 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  color: $color-neutral-3;
+  background-color: #fff;
+  font-family: $font-primary;
+  font-size: fs(md);
+  line-height: lh(md);
 }

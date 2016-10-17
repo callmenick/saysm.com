@@ -1,2 +1,14 @@
 header.Header
-  h1 SAYSM
+  .Container.Container--full.Container--pad
+    nav.Nav
+      a.Nav-branding(href= SITE_URL + "/")
+        img(src= SITE_URL + "/img/logo.svg", alt="SAYSM")
+      ul.Nav-items
+        li.Nav-item(class= slug === "home" ? "is-active" : "")
+          a.Nav-link(href= SITE_URL + "/") Work
+        li.Nav-item(class= slug === "blog" ? "is-active" : "")
+          a.Nav-link(href= SITE_URL + "/blog") Blog
+        li.Nav-item(class= slug === "about" ? "is-active" : "")
+          a.Nav-link(href= SITE_URL + "/about") About
+        li.Nav-item(class= slug === "contact" ? "is-active" : "")
+          a.Nav-link(href= SITE_URL + "/contact") Contact

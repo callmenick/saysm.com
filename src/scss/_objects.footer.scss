@@ -1,2 +1,29 @@
 .Footer {
+  padding: gutter(xx) 0;
+  text-align: center;
+}
+
+.Footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: gutter(xl);
+}
+
+.Footer-icon {
+  margin: 0 gutter(md);
+  flex: 0 0 4.8rem;
+  max-width: 4.8rem;
+  height: 4.8rem;
+  background-color: #eee;
+  font-size: 0;
+  text-indent: -9999px;
+  border-radius: 50%;
+}
+
+.Footer-copyright {
+  small {
+    color: $color-neutral-5;
+    font-size: fs(sm);
+  }
 }

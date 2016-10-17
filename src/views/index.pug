@@ -1,17 +1,37 @@
 extends ./_layouts/primary.pug
 
 block variables
+  - var slug = "home"
+  -
+    var items = [
+      {
+        title: "Merry Hipmas",
+        subtitle: "Meet the hipmas gang"
+      },
+      {
+        title: "Carnival 2014",
+        subtitle: "The carnival 2014 subtitle"
+      },
+      {
+        title: "Say Yes To Life",
+        subtitle: "The birth of SAYSM"
+      }
+    ]
 
 block main
-  nav.NavSpecial
-    a.NavSpecial-link(href= SITE_URL)
-      img.NavSpecial-logo(src= SITE_URL + "/img/logo.svg", alt="")
-    a.NavSpecial-link(href= SITE_URL + "/work")
-      span Work
-      i.NavSpecial-icon.fa.fa-camera
-    a.NavSpecial-link(href= SITE_URL + "/blog")
-      span Blog
-      i.NavSpecial-icon.fa.fa-book
-    a.NavSpecial-link(href= SITE_URL + "/about")
-      span About
-      i.NavSpecial-icon.fa.fa-pencil
+  section.Section
+    .Container.Container--narrow.Container--pad
+      .Grid.Grid--gutter-xx
+        .Grid-cell--xs-12
+          .Blurb
+            h2.Blurb-title Say Something
+            p.Blurb-text Random musings about our work. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+  section.Section
+    .Container.Container--full
+      each item in items
+        a.PortfolioItem(href="#")
+          .PortfolioItem-img
+          .PortfolioItem-content
+            h2.Portfolio-title= item.title
+            span.Portfolio-subtitle= item.subtitle

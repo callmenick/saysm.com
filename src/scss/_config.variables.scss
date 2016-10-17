@@ -13,42 +13,18 @@ $color-neutral-8: #EEE;
 
 // UI colours
 $color-ui-pink: rgb(255, 40, 140);
-$color-ui-pink-dark: darken($color-ui-pink, 10%);
-$color-ui-pink-light: lighten($color-ui-pink, 10%);
+$color-ui-pink-dark: darken($color-ui-pink, 20%);
+$color-ui-pink-light: lighten($color-ui-pink, 20%);
 $color-ui-green: rgb(160, 230, 70);
-$color-ui-green-dark: darken($color-ui-green, 10%);
-$color-ui-green-light: lighten($color-ui-green, 10%);
+$color-ui-green-dark: darken($color-ui-green, 20%);
+$color-ui-green-light: lighten($color-ui-green, 20%);
+$color-ui-turquoise: rgb(20, 213, 177);
+$color-ui-turquoise-dark: darken($color-ui-turquoise, 20%);
+$color-ui-turquoise-light: lighten($color-ui-turquoise, 20%);
 $color-ui-neutral: $color-neutral-1;
-$color-ui-neutral-dark: darken($color-ui-neutral, 10%);
-$color-ui-neutral-light: lighten($color-ui-neutral, 10%);
+$color-ui-neutral-dark: darken($color-ui-neutral, 20%);
+$color-ui-neutral-light: lighten($color-ui-neutral, 20%);
 
 // Font stacks
-$font-primary: Roboto, Helvetica, Arial, sans-serif;
+$font-primary: Rubik, Helvetica, Arial, sans-serif;
 $font-secondary: 'Eight Track', Roboto, Helvetica, Arial, sans-serif;
-
-// Font map
-$font-size: (
-  xs: 0.8rem,
-  sm: 1.2rem,
-  md: 1.6rem,
-  lg: 2.2rem,
-  xl: 2.8rem,
-  xx: 3.6rem
-);
-
-// Line height map
-$line-height: (
-  sm: 1.1,
-  md: 1.8,
-  lg: 2.1
-);
-
-// Gutters
-$gutter: (
-  xs: 0.4rem,
-  sm: 0.65rem,
-  md: 1.05rem,
-  lg: 1.7rem,
-  xl: 2.75rem,
-  xx: 4.45rem
-);

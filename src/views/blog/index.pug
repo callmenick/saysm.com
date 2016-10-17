@@ -1,1 +1,25 @@
-extends ../_layouts/secondary.pug
+extends ../_layouts/primary.pug
+
+block variables
+  - var page = "Blog"
+  - var slug = "blog"
+
+block main
+  -
+    var articles = [
+      {
+        title: "This is another title",
+        date: "22nd August, 2013"
+      },
+      {
+        title: "This is a title",
+        date: "22nd August, 2012"
+      }
+    ]
+
+  .Container.Container--narrow.Container--pad
+    .Grid.Grid--gutter-xx
+      .Grid-cell--xs-12
+        .Blurb
+          h2.Blurb-title Say Something
+          p.Blurb-text Random musings about our blog and writing. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

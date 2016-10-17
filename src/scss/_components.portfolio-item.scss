@@ -1,0 +1,55 @@
+.PortfolioItem {
+  position: relative;
+  display: block;
+  padding-bottom: 50%;
+  background-color: #eee;
+
+  @include break(sm) {
+    padding-bottom: 43.75%;
+  }
+
+  @include break(md) {
+    padding-bottom: 37.5%;
+  }
+
+  @include break(lg) {
+    padding-bottom: 33.3333%;
+  }
+}
+
+.PortfolioItem:nth-child(2n) {
+  background-color: #ddd;
+}
+
+.PortfolioItem-img {
+  position: absolute;
+  z-index: 1;
+}
+
+.PortfolioItem-content {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Portfolio-title {
+  margin: 0 0 gutter(xs) 0;
+  padding: gutter(xs) gutter(sm);
+  color: #fff;
+  background-color: $color-neutral-1;
+  font-family: $font-primary;
+  text-transform: lowercase;
+}
+
+.Portfolio-subtitle {
+  padding: 0 gutter(xs);
+  color: #fff;
+  background-color: $color-neutral-1;
+  font-size: fs(sm);
+  text-transform: lowercase;
+}

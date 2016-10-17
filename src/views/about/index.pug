@@ -1,1 +1,42 @@
-extends ../_layouts/secondary.pug
+extends ../_layouts/primary.pug
+
+block variables
+  - var page = "About"
+  - var slug = "about"
+
+block main
+  section.Section
+    .Container.Container--narrow.Container--pad
+      .Grid.Grid--gutter-xx
+        .Grid-cell--xs-12
+          .Blurb
+            h2.Blurb-title Say Something
+            p.Blurb-text SAYSM is a creative collaboration of Nick Salloum and Elena Molchanova. We use our skills across several platforms to create a design vision that is colourful, fun, open-minded, mischievous and happy &mdash; the vision we both share, and live by.
+        .Grid-cell--xs-12
+          img(src= SITE_URL + "/img/about/saysm-banner.png")
+        .Grid-cell--xs-12.Grid-cell--sm-6
+          .About.About--nick
+            h2 Nick
+            ul
+              li artist
+              li web developer
+              li t-shirt designer
+              li entrepreneur
+              li engineer
+              li free spirit
+              li surfer
+        .Grid-cell--xs-12.Grid-cell--sm-6
+          .About.About--elena
+            h2 Elena
+            ul
+              li art director
+              li graphic designer
+              li illustrator
+              li motion graphics artist
+              li video editor
+              li free spirit
+              li writer
+        .Grid-cell--xs-12
+          .Blurb
+            h2.Blurb-title Say Something
+            p.Blurb-text Between us we hold a versatile creative skill set, which includes general art-direction, creative writing, graphic design, painting &amp; digital illustration, as well as video production &amp; motion graphics, web design &amp; development, and screen printing.

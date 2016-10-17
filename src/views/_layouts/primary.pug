@@ -1,4 +1,11 @@
 extends ./index.pug
 
 block body
-  block main
+  include ../_partials/header.pug
+  main.Main
+    .Container
+      block main
+  include ../_partials/footer.pug
+
+block scripts
+  script(src= SITE_URL + "/js/main.js")

@@ -1,0 +1,28 @@
+.About {
+  h2 {
+    margin: 0 0 gutter(lg) 0;
+    font-size: fs(xl);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.About--nick {
+  text-align: center;
+
+  @include break(sm) {
+    text-align: right;
+  }
+}
+
+.About--elena {
+  text-align: center;
+
+  @include break(sm) {
+    text-align: left;
+  }
+}

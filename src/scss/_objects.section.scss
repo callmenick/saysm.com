@@ -1,5 +1,5 @@
 .Section {
-  margin-bottom: map-get($gutter, xx);
+  margin-bottom: gutter(xx);
 
   &:last-child {
     margin-bottom: 0;
