@@ -8,18 +8,29 @@ block main
   -
     var articles = [
       {
-        title: "This is another title",
-        date: "22nd August, 2013"
+        title: "Happyliferules 101",
+        slug: "happyliferules-101",
+        date: "9th December, 2013"
       },
       {
-        title: "This is a title",
-        date: "22nd August, 2012"
+        title: "SAYSM Teaser Video",
+        slug: "saysm-teaser-video",
+        date: "24th November, 2013"
       }
     ]
 
-  .Container.Container--narrow.Container--pad
-    .Grid.Grid--gutter-xx
-      .Grid-cell--xs-12
-        .Blurb
-          h2.Blurb-title Say Something
-          p.Blurb-text Random musings about our blog and writing. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  section.Section
+    .Container.Container--narrow.Container--pad
+      .Blurb
+        h2.Blurb-title Say Something
+        p.Blurb-text Random musings about our blog and writing. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+  section.Section
+    .Container.Container--wide.Container--pad
+      each article in articles
+        a.BlogLoop(href= article.slug)
+          .BlogLoop-details
+            h2.BlogLoop-title
+              span= article.title
+            span.BlogLoop-date= article.date
+          .BlogLoop-img

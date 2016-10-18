@@ -1,0 +1,66 @@
+.BlogLoop {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: gutter(xx);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.BlogLoop-details {
+  margin: 0 0 gutter(sm) 0;
+  flex: 0 0 100%;
+  max-width: 100%;
+
+  @include break(lg) {
+    margin: 0 gutter(xl) 0 0;
+    flex: 1;
+    text-align: right;
+  }
+}
+
+.BlogLoop-title {
+  margin: 0 0 gutter(xs) 0;
+  color: #fff;
+  font-family: $font-primary;
+  font-size: fs(md);
+  line-height: 1.4;
+  text-transform: lowercase;
+
+  @include break(lg) {
+    font-size: fs(lg);
+  }
+
+  span {
+    display: inline;
+    padding: 0 gutter(sm);
+    background-color: $color-neutral-1;
+    box-decoration-break: clone;
+    transition: background 250ms;
+  }
+}
+
+.BlogLoop-date {
+  color: $color-neutral-5;
+  font-size: fs(sm);
+}
+
+.BlogLoop-img {
+  padding-bottom: 50%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  background-color: #eee;
+
+  @include break(lg) {
+    padding-bottom: 33.3333%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
+.BlogLoop:hover {
+  .BlogLoop-title span {
+    background-color: $color-ui-pink;
+  }
+}
