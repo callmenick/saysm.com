@@ -8,14 +8,46 @@ block main
   -
     var articles = [
       {
+        title: "trinidad+tobago film festival/2014: special edition t-shirt design by saysm",
+        slug: "ttff-2014-special-edition-tshirt",
+        date: "11th September, 2014",
+        img: "ttff-2014-special-edition-tshirt-feat.jpg"
+      },
+      {
+        title: "Say Yes To Life Collection – Clearance Sale",
+        slug: "say-yes-to-life-collection-clearance-sale",
+        date: "11th August, 2014",
+        img: "say-yes-to-life-collection-clearance-sale-feat.jpg"
+      },
+      {
+        title: "The Launch",
+        slug: "the-launch",
+        date: "17th April, 2014",
+        img: "the-launch-feat.jpg"
+      },
+      {
+        title: "Carnival 2014",
+        slug: "carnival-2014",
+        date: "15th March, 2014",
+        img: "carnival-2014-feat.jpg"
+      },
+      {
+        title: "Say Yes To Life Collection Photoshoot",
+        slug: "say-yes-to-life-collection-photoshoot",
+        date: "5th February, 2014",
+        img: "say-yes-to-life-collection-photoshoot-feat.jpg"
+      },
+      {
         title: "Happyliferules 101",
         slug: "happyliferules-101",
-        date: "9th December, 2013"
+        date: "9th December, 2013",
+        img: "happyliferules-101-feat.png"
       },
       {
         title: "SAYSM Teaser Video",
         slug: "saysm-teaser-video",
-        date: "24th November, 2013"
+        date: "24th November, 2013",
+        img: "saysm-teaser-video-feat.png"
       }
     ]
 
@@ -34,3 +66,4 @@ block main
               span= article.title
             span.BlogLoop-date= article.date
           .BlogLoop-img
+            img(src= SITE_URL + "/img/blog/" + article.slug + "/" + article.img)

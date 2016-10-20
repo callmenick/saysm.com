@@ -53,3 +53,15 @@
   font-size: fs(sm);
   text-transform: lowercase;
 }
+
+.Portfolio-title,
+.Portfolio-subtitle {
+  transition: background 250ms;
+}
+
+.PortfolioItem:hover {
+  .Portfolio-title,
+  .Portfolio-subtitle {
+    background-color: $color-ui-pink;
+  }
+}
