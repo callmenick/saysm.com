@@ -1,3 +1,0 @@
-# SAYSM Website
-
-Woo hoo.

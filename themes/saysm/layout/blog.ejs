@@ -1,0 +1,23 @@
+<%- partial('partial/blurb', { text: page.blurb.top }) %>
+
+<section class="Section">
+  <div class="Container Container--wide Container--pad">
+    <div class="BlogLoop">
+      <% site.posts.each(function(post) { %>
+        <a href="<%= post.permalink %>" class="BlogLoop-link">
+          <article class="BlogLoop-article">
+            <div class="BlogLoop-details">
+              <h2 class="BlogLoop-title"><span><%= post.title %></span></h2>
+              <span class="BlogLoop-date"><%- date(post.date, 'Do MMMM, YYYY') %></span>
+            </div>
+            <div class="BlogLoop-img">
+              <img src="<%= post.slug %>/<%= post.img %>" alt="">
+            </div>
+          </article>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<%- partial('partial/blurb', { text: page.blurb.bottom }) %>
